@@ -66,7 +66,7 @@ public class Lecturn : MonoBehaviour
                 break;
 
             case lecturnState.StarBook:
-                gameScript.curRoom = GameState.Room2;
+                gameScript.curRoomState = GameState.changeRoom;
                 curBook = lecturnState.inactive;
                 break;
         }
@@ -87,6 +87,11 @@ public class Lecturn : MonoBehaviour
         {
             VideoScene.SetActive(true);
         }
+
+        if (book.name.Contains("StarBook"))
+        {
+            curBook = lecturnState.StarBook;
+        }
     }
 
     private void OnSocketSelectExited(SelectExitEventArgs args)
@@ -102,6 +107,11 @@ public class Lecturn : MonoBehaviour
         if (book.name.Contains("VideoBook"))
         {
             VideoScene.SetActive(false);
+        }
+
+        if (book.name.Contains("StarBook"))
+        {
+            curBook = lecturnState.inactive;
         }
     }
 
