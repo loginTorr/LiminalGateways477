@@ -15,13 +15,9 @@ public class Lecturn : MonoBehaviour
 
     public lecturnState curBook;
 
-    public GameObject NatureBook;
-    public GameObject VideoBook;
-    public GameObject StarBook;
-
+    public GameObject NoScene;
     public GameObject NatureScene;
     public GameObject VideoScene;
-    public GameObject StarScene;
 
     private XRBaseInteractable interactable;
     private XRSocketInteractor socket;
@@ -32,7 +28,6 @@ public class Lecturn : MonoBehaviour
     void Awake()
     {
         // Grabs references, ensuring they're set before OnEnable
-        gameScript = FindObjectOfType<Game>();
         interactable = GetComponent<XRBaseInteractable>();
         socket = GetComponent<XRSocketInteractor>();
 
@@ -42,6 +37,7 @@ public class Lecturn : MonoBehaviour
     void Start()
     {
         curBook = lecturnState.inactive;
+        gameScript = FindObjectOfType<Game>();
 
     }
 
@@ -80,18 +76,19 @@ public class Lecturn : MonoBehaviour
 
         if (book.name.Contains("NatureBook"))
         {
-            NatureScene.SetActive(true);
+            NoScene.SetActive(false); NatureScene.SetActive(true);
         }
       
         if (book.name.Contains("VideoBook"))
         {
-            VideoScene.SetActive(true);
+            NoScene.SetActive(false); VideoScene.SetActive(true);
         }
 
         if (book.name.Contains("StarBook"))
         {
             curBook = lecturnState.StarBook;
         }
+
     }
 
     private void OnSocketSelectExited(SelectExitEventArgs args)
@@ -101,12 +98,12 @@ public class Lecturn : MonoBehaviour
 
         if (book.name.Contains("NatureBook"))
         {
-            NatureScene.SetActive(false);
+            NatureScene.SetActive(false); NoScene.SetActive(true);
         }
 
         if (book.name.Contains("VideoBook"))
         {
-            VideoScene.SetActive(false);
+            VideoScene.SetActive(false); NoScene.SetActive(true);
         }
 
         if (book.name.Contains("StarBook"))
