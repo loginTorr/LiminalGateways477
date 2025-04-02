@@ -215,7 +215,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4693102630118443498, guid: 4053fa85299236c40ad47b8cab3b1f6e, type: 3}
       propertyPath: m_Name
-      value: LecturnSnappable Variant
+      value: LecturnSnappable
       objectReference: {fileID: 0}
     - target: {fileID: 6966342180711837770, guid: 4053fa85299236c40ad47b8cab3b1f6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -297,5 +297,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.34769297, y: 0.46874213, z: 0.34769303}
-  m_Center: {x: -3.211142, y: -2.1375346, z: 0.5385144}
+  m_Size: {x: 0.3476933, y: 0.29612485, z: 0.34769303}
+  m_Center: {x: -3.2111368, y: -2.22042, z: 0.53851336}
