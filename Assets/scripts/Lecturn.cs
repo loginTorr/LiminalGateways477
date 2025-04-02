@@ -4,7 +4,6 @@ using SerializableCallback;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 
@@ -19,7 +18,6 @@ public class Lecturn : MonoBehaviour
     public GameObject NatureScene;
     public GameObject VideoScene;
 
-    private XRBaseInteractable interactable;
     private XRSocketInteractor socket;
 
 
@@ -28,7 +26,6 @@ public class Lecturn : MonoBehaviour
     void Awake()
     {
         // Grabs references, ensuring they're set before OnEnable
-        interactable = GetComponent<XRBaseInteractable>();
         socket = GetComponent<XRSocketInteractor>();
 
     }

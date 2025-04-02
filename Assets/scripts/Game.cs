@@ -5,8 +5,6 @@ using UnityEngine;
 
 public enum GameState { Room1, Room2, changeRoom, changingRoom };
 public enum lecturnState { inactive, CheckBook, NatureBook, VideoBook, StarBook };
-public enum colorPuzzle { inactive, empty, RedBook, PinkBook, GreenBook, YellowBook };
-
 
 
 public class Game : MonoBehaviour
