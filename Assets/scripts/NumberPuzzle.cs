@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using State = NumPuzzleState;
 
-private enum NumPuzzleState {
+public enum NumPuzzleState {
     IDLE,
     ONE,
     TWO,
@@ -17,8 +17,8 @@ public class NumberPuzzle : MonoBehaviour {
     private Numbers LastNumber;
 
     void Start() {
-        LastNumber = Numbers.NONE
-        State = State.IDLE
+        LastNumber = Numbers.NONE;
+        State = State.IDLE;
     }
 
     void Update() { 
@@ -64,7 +64,7 @@ public class NumberPuzzle : MonoBehaviour {
                 break;
 
                 case State.THREE_FINAL:
-                PuzzleComplete.SetActive(true);
+                // PuzzleComplete.SetActive(true);
                 break;
 
                 case State.ERROR:
