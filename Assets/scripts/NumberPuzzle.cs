@@ -64,7 +64,7 @@ public class NumberPuzzle : MonoBehaviour {
                 break;
 
                 case State.THREE_FINAL:
-                // PuzzleComplete.SetActive(true);
+                // spawn in game object needed for next puzzle
                 break;
 
                 case State.ERROR:
