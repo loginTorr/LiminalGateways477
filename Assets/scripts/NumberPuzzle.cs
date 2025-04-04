@@ -77,6 +77,6 @@ public class NumberPuzzle : MonoBehaviour {
     }
 
     public void Press(Numbers Number) {
-    LastNumber = Number;
+        LastNumber = Number;
     }
 }
