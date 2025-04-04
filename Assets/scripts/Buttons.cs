@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Buttons : MonoBehaviour {
+    public NumberPuzzle Puzzle;
+    public int Number;
+    public NumPuzzleState PuzzleState;
+
     void Start() {
     }
 
@@ -10,6 +14,8 @@ public class Buttons : MonoBehaviour {
     }
 
     public void ButtonPress() {
-        if ()
+        if (Puzzle.State != NumPuzzleState.THREE_FINAL) {
+            Puzzle.Press(Number);
+        }
     }
 }

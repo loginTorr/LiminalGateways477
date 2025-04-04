@@ -14,31 +14,32 @@ public enum NumPuzzleState {
 
 public class NumberPuzzle : MonoBehaviour {
     public State State { get; private set; }
-    private Numbers LastNumber;
+    public GameObject PuzzleComplete;
+    public int LastNumber;
 
     void Start() {
-        LastNumber = Numbers.NONE;
+        LastNumber = 0;
         State = State.IDLE;
     }
 
     void Update() { 
-        if (LastNumber == Numbers.NONE) {
+        if (LastNumber == 0) {
             return;
         }
 
         switch (State) {
             case State.IDLE:
-            if (LastNumber == Numbers.ONE) { ChangeState(State.ONE); }
+            if (LastNumber == 1) { ChangeState(State.ONE); }
             else { ChangeState(State.ERROR); }
             break;
 
             case State.ONE:
-            if (LastNumber == Numbers.TWO) { ChangeState(State.TWO); }
+            if (LastNumber == 2) { ChangeState(State.TWO); }
             else { ChangeState(State.ERROR); }
             break;
 
             case State.TWO:
-            if (LastNumber == Numbers.THREE_FINAL) { ChangeState(State.THREE_FINAL); }
+            if (LastNumber == 3) { ChangeState(State.THREE_FINAL); }
             else { ChangeState(State.ERROR); }
             break;
 
@@ -46,7 +47,7 @@ public class NumberPuzzle : MonoBehaviour {
             ChangeState(State.IDLE);
             break;
         }
-        LastNumber = Numbers.NONE;
+        LastNumber = 0;
     }
 
     private void ChangeState(State NewState) {
@@ -64,7 +65,8 @@ public class NumberPuzzle : MonoBehaviour {
                 break;
 
                 case State.THREE_FINAL:
-                // spawn in game object needed for next puzzle
+                // spawn in the object
+                print("puzzle complete");
                 break;
 
                 case State.ERROR:
@@ -76,7 +78,7 @@ public class NumberPuzzle : MonoBehaviour {
         }
     }
 
-    public void Press(Numbers Number) {
+    public void Press(int Number) {
         LastNumber = Number;
     }
 }
