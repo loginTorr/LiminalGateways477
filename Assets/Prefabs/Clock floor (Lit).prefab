@@ -55,7 +55,7 @@ MonoBehaviour:
   - Assets/Materials/Clock Hands.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_5cb8e0cd-7c9e-46b1-ae2a-8d5ff4395781
+    name: UM_OperatedMesh_8ecc228c-07fa-4d81-9f6b-4004de2aafe7
     skinnedMesh: 0
     sharedMesh: {fileID: -5294952911575181981}
     buidVersion:
@@ -67,7 +67,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 5cb8e0cd-7c9e-46b1-ae2a-8d5ff4395781
+  sourceMeshRendererGUID: 8ecc228c-07fa-4d81-9f6b-4004de2aafe7
   guid: 0519161a-1ac8-4bf5-bd8b-83ed855a4eab
   localOptions:
     RecalculateTangents: 0
@@ -188,7 +188,7 @@ MonoBehaviour:
   - Assets/Materials/Clock Center.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_25b0bdd7-5e0e-46a0-8425-720bb2c170a7
+    name: UM_OperatedMesh_83f1e039-e7a8-4a9d-9f4a-52b2061c0233
     skinnedMesh: 0
     sharedMesh: {fileID: 3794208366787227854}
     buidVersion:
@@ -200,7 +200,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 25b0bdd7-5e0e-46a0-8425-720bb2c170a7
+  sourceMeshRendererGUID: 83f1e039-e7a8-4a9d-9f4a-52b2061c0233
   guid: 683107ca-f381-42aa-be9e-b6ea5590ab0a
   localOptions:
     RecalculateTangents: 0
@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 6951451359587250912}
   - component: {fileID: 3066067676066153247}
   - component: {fileID: 2722072905104950536}
+  - component: {fileID: 4196096789235805013}
   m_Layer: 0
   m_Name: Clock floor (Lit)
   m_TagString: Untagged
@@ -325,7 +326,7 @@ MonoBehaviour:
   - Assets/Materials/Clock(Lit).mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_2e78866b-5899-4ed5-92f5-f5b808e78388
+    name: UM_OperatedMesh_a1d77bb6-9ff1-42dc-bb2d-2e71f4f01c8a
     skinnedMesh: 0
     sharedMesh: {fileID: 8877958704693984507}
     buidVersion:
@@ -337,7 +338,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 2e78866b-5899-4ed5-92f5-f5b808e78388
+  sourceMeshRendererGUID: a1d77bb6-9ff1-42dc-bb2d-2e71f4f01c8a
   guid: 621be6a0-6f25-492b-982c-d7564a20f436
   localOptions:
     RecalculateTangents: 0
@@ -403,6 +404,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4196096789235805013
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4239245551438862616}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.1, y: 0.1, z: 15.1}
+  m_Center: {x: 0, y: 0.05, z: 0}
 --- !u!1 &6727768462663816842
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +480,7 @@ MonoBehaviour:
   - Assets/Materials/Mirror.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_8ba9841f-673d-4df8-8447-9ba6d4f12a72
+    name: UM_OperatedMesh_4346427f-738b-4842-b17b-8ec4f096433c
     skinnedMesh: 0
     sharedMesh: {fileID: 2215505333131939045}
     buidVersion:
@@ -470,7 +492,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 8ba9841f-673d-4df8-8447-9ba6d4f12a72
+  sourceMeshRendererGUID: 4346427f-738b-4842-b17b-8ec4f096433c
   guid: 784a877b-878b-4ad7-8f9a-e2bd6cbd6fef
   localOptions:
     RecalculateTangents: 0
@@ -591,7 +613,7 @@ MonoBehaviour:
   - Assets/Materials/Clock Hands.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_71567e0e-e970-4a74-ba7d-29e8d8ce1675
+    name: UM_OperatedMesh_7c9afdc8-8687-4601-8ab6-62cca3dd6744
     skinnedMesh: 0
     sharedMesh: {fileID: -3221672313539404053}
     buidVersion:
@@ -603,7 +625,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 71567e0e-e970-4a74-ba7d-29e8d8ce1675
+  sourceMeshRendererGUID: 7c9afdc8-8687-4601-8ab6-62cca3dd6744
   guid: 0519161a-1ac8-4bf5-bd8b-83ed855a4eab
   localOptions:
     RecalculateTangents: 0
