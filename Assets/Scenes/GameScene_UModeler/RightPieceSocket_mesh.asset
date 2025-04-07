@@ -6,7 +6,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Star_Book_Piece_(L)_mesh
+  m_Name: RightPieceSocket_mesh
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2

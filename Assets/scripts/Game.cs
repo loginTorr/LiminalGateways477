@@ -7,6 +7,8 @@ using UnityEngine;
 public enum GameState { Room1, Room2, changeRoom };
 public enum ColorPuzzleState { Unsolved, Solving, Solved }
 
+public enum StarBookState { Empty, Filling, Full}
+
 public class Game : MonoBehaviour
 {
     public GameState curRoomState;

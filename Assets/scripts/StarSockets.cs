@@ -1,84 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
-using SerializableCallback;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
-
-public class Lecturn : MonoBehaviour
+public class StarSockets : MonoBehaviour
 {
-
-    public Game gameScript;
-
-    public GameObject NoScene;
-    public GameObject NatureScene;
-    public GameObject VideoScene;
-
     private XRSocketInteractor socket;
 
-
-
+    public StarBook StarBookScript;
 
     void Awake()
     {
         // Grabs references, ensuring they're set before OnEnable
         socket = GetComponent<XRSocketInteractor>();
+
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        gameScript = FindObjectOfType<Game>();
+        StarBookScript = FindObjectOfType<StarBook>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+
     }
 
     private void OnSocketSelectEntered(SelectEnterEventArgs args)
-    { 
+    {
         // Retrieve the snapped object's GameObject.
-        GameObject book = args.interactableObject.transform.gameObject;
+        GameObject starPiece = args.interactableObject.transform.gameObject;
 
-        if (book.name.Contains("NatureBook"))
+        if (starPiece.name.Contains("RightStarPiece"))
         {
-            NoScene.SetActive(false); NatureScene.SetActive(true);
-        }
-      
-        if (book.name.Contains("VideoBook"))
-        {
-            NoScene.SetActive(false); VideoScene.SetActive(true);
+            StarBookScript.count++;
+            StarBookScript.starBookState = StarBookState.Filling;
         }
 
-        if (book.name.Contains("StarBookFull"))
+        if (starPiece.name.Contains("LeftStarPiece"))
         {
-            gameScript.switchRoom();
+            StarBookScript.count++;
+            StarBookScript.starBookState = StarBookState.Filling;
         }
-
     }
 
     private void OnSocketSelectExited(SelectExitEventArgs args)
     {
         // Retrieve the snapped object's GameObject.
-        GameObject book = args.interactableObject.transform.gameObject;
+        GameObject starPiece = args.interactableObject.transform.gameObject;
 
-        if (book.name.Contains("NatureBook"))
+        if (starPiece.name.Contains("RightStarPiece"))
         {
-            NatureScene.SetActive(false); NoScene.SetActive(true);
+            StarBookScript.count--;
         }
 
-        if (book.name.Contains("VideoBook"))
+        if (starPiece.name.Contains("LeftStarPiece"))
         {
-            VideoScene.SetActive(false); NoScene.SetActive(true);
-        }
-
-        if (book.name.Contains("StarBook"))
-        {
-            
+            StarBookScript.count--;
         }
     }
 
@@ -102,5 +84,4 @@ public class Lecturn : MonoBehaviour
             socket.selectExited.RemoveListener(OnSocketSelectExited);
         }
     }
-
 }
