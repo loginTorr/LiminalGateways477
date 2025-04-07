@@ -12,8 +12,6 @@ public class Lecturn : MonoBehaviour
 
     public Game gameScript;
 
-    public lecturnState curBook;
-
     public GameObject NoScene;
     public GameObject NatureScene;
     public GameObject VideoScene;
@@ -27,42 +25,17 @@ public class Lecturn : MonoBehaviour
     {
         // Grabs references, ensuring they're set before OnEnable
         socket = GetComponent<XRSocketInteractor>();
-
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        curBook = lecturnState.inactive;
         gameScript = FindObjectOfType<Game>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        switch (curBook)
-        {
-            //switches the lecturn states to off when Room2 is entered
-            case lecturnState.inactive:
-                //switches to empty state when Room1 entered
-                break;
-
-            //continously calls a function to check for the books, switches to specific book state when conditions met
-            case lecturnState.CheckBook:
-                break;
-
-            case lecturnState.NatureBook:
-                break;
-
-            case lecturnState.VideoBook:
-                break;
-
-            case lecturnState.StarBook:
-                gameScript.curRoomState = GameState.changeRoom;
-                curBook = lecturnState.inactive;
-                break;
-        }
         
     }
 
@@ -83,7 +56,7 @@ public class Lecturn : MonoBehaviour
 
         if (book.name.Contains("StarBook"))
         {
-            curBook = lecturnState.StarBook;
+            gameScript.switchRoom();
         }
 
     }
@@ -105,7 +78,7 @@ public class Lecturn : MonoBehaviour
 
         if (book.name.Contains("StarBook"))
         {
-            curBook = lecturnState.inactive;
+            
         }
     }
 

@@ -40,28 +40,22 @@ public class ColorSnaps : MonoBehaviour
 
         if (book.name.Contains("BlueBook") & this.gameObject.name.Contains("BookCaseSnap1"))
         {
-            ColorPuzzleScript.count++;
-            print(ColorPuzzleScript.count);
-
-            //ColorPuzzleScript.lastColor = Colors.BLUE;
-            //print(ColorPuzzleScript.lastColor);
+            ColorPuzzleScript.count++; //print(ColorPuzzleScript.count);
+            ColorPuzzleScript.colorPuzzleState = ColorPuzzleState.Solving;
         }
 
         if (book.name.Contains("RedBook") & this.gameObject.name.Contains("BookCaseSnap2"))
         {
-            ColorPuzzleScript.count++;
-            print(ColorPuzzleScript.count);
+            ColorPuzzleScript.count++; //print(ColorPuzzleScript.count);
+            ColorPuzzleScript.colorPuzzleState = ColorPuzzleState.Solving;
 
-            //ColorPuzzleScript.lastColor = Colors.RED;
-            //print(ColorPuzzleScript.lastColor);
         }
 
         if (book.name.Contains("GreenBook") & this.gameObject.name.Contains("BookCaseSnap3"))
         {
-            ColorPuzzleScript.count++; print(ColorPuzzleScript.count);
+            ColorPuzzleScript.count++; //print(ColorPuzzleScript.count);
+            ColorPuzzleScript.colorPuzzleState = ColorPuzzleState.Solving;
 
-            //ColorPuzzleScript.lastColor = Colors.GREEN;
-            //print(ColorPuzzleScript.lastColor);
         }
 
     }
@@ -73,17 +67,17 @@ public class ColorSnaps : MonoBehaviour
 
         if (book.name.Contains("BlueBook"))
         {
-            ColorPuzzleScript.count--; print(ColorPuzzleScript.count);
+            ColorPuzzleScript.count--; //print(ColorPuzzleScript.count);
         }
 
         if (book.name.Contains("RedBook"))
         {
-            ColorPuzzleScript.count--; print(ColorPuzzleScript.count);
+            ColorPuzzleScript.count--; //print(ColorPuzzleScript.count);
         }
 
         if (book.name.Contains("GreenBook"))
         {
-            ColorPuzzleScript.count--; print(ColorPuzzleScript.count);
+            ColorPuzzleScript.count--; //print(ColorPuzzleScript.count);
         }
 
         if (ColorPuzzleScript.count <= 0)

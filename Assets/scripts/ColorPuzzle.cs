@@ -7,7 +7,9 @@ using UnityEngine;
 public class ColorPuzzle : MonoBehaviour
 {
     public int count;
+    public ColorPuzzleState colorPuzzleState;
 
+    public GameObject starBook;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +20,28 @@ public class ColorPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (count == 3)
+        switch (colorPuzzleState)
         {
-            print("puzzle solved1");
+            case ColorPuzzleState.Unsolved:
+                break;
+
+            case ColorPuzzleState.Solving:
+                if (count == 3)
+                {
+                    print("puzzle solved1");
+                    colorPuzzleState = ColorPuzzleState.Solved;
+                    count++;
+                    starBook.SetActive(true);
+
+                }
+                else
+                {
+                    colorPuzzleState = ColorPuzzleState.Unsolved;
+                }
+                    break;
+
+            case ColorPuzzleState.Solved:
+                break;
         }
 
     }

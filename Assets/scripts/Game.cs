@@ -1,66 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
+using Tripolygon.UModelerX.Runtime.MessagePack.Resolvers;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public enum GameState { Room1, Room2, changeRoom, changingRoom };
-public enum lecturnState { inactive, CheckBook, NatureBook, VideoBook, StarBook };
-
+public enum GameState { Room1, Room2, changeRoom };
+public enum ColorPuzzleState { Unsolved, Solving, Solved }
 
 public class Game : MonoBehaviour
 {
     public GameState curRoomState;
+
     public GameObject Room1Object;
     public GameObject Room2Object;
 
-    private GameObject curRoomObject;
+    public int roomNum;
 
     // Start is called before the first frame update
     void Start()
     {
+        roomNum = 1;
         curRoomState = GameState.Room1;
-        curRoomObject = Room1Object;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //GameState Loop
         switch (curRoomState)
         {
             case GameState.Room1:
-                print("Room1");
+                //print("Room1");
                 break;
-
+     
             case GameState.Room2:
-                print("Room2");
+                //print("Room2");
                 break;
 
             case GameState.changeRoom:
                 switchRoom();
-                curRoomState = GameState.changingRoom;
                 break;
 
-            case GameState.changingRoom:
-                break;
         }
+
     }
 
-    void switchRoom()
+    public void switchRoom()
     {
-        if (curRoomObject.name.Contains("Room1"))
+        if (roomNum == 1)
         {
             Room1Object.SetActive(false);
             Room2Object.SetActive(true);
-            curRoomObject = Room2Object;
-            curRoomState = GameState.Room2;
+            roomNum = 2;
+
         }
 
-        if (curRoomObject.name.Contains("Room2"))
+        else if (roomNum == 2)
         {
             Room2Object.SetActive(false);
             Room1Object.SetActive(true);
-            curRoomObject = Room1Object;
-            curRoomState = GameState.Room1;
+            roomNum = 1;
+
         }
     }
 }
