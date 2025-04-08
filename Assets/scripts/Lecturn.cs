@@ -44,6 +44,11 @@ public class Lecturn : MonoBehaviour
         // Retrieve the snapped object's GameObject.
         GameObject book = args.interactableObject.transform.gameObject;
 
+        if (book.name.Contains("EmptyStarBook") & gameScript.curRoomState == GameState.StartRoom)
+        {
+            gameScript.switchRoom();
+        }
+
         if (book.name.Contains("NatureBook"))
         {
             NoScene.SetActive(false); NatureScene.SetActive(true);
@@ -78,7 +83,7 @@ public class Lecturn : MonoBehaviour
 
         if (book.name.Contains("StarBook"))
         {
-            
+            return;
         }
     }
 

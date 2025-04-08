@@ -4,7 +4,7 @@ using Tripolygon.UModelerX.Runtime.MessagePack.Resolvers;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public enum GameState { Room1, Room2, changeRoom };
+public enum GameState { StartRoom, StartGame, Room1, Room2, changeRoom };
 public enum ColorPuzzleState { Unsolved, Solving, Solved }
 
 public enum StarBookState { Empty, Filling, Full}
@@ -13,6 +13,7 @@ public class Game : MonoBehaviour
 {
     public GameState curRoomState;
 
+    public GameObject StartRoom;
     public GameObject Room1Object;
     public GameObject Room2Object;
 
@@ -21,8 +22,8 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        roomNum = 1;
-        curRoomState = GameState.Room1;
+        roomNum = 0;
+        curRoomState = GameState.StartRoom;
     }
 
     // Update is called once per frame
@@ -31,6 +32,12 @@ public class Game : MonoBehaviour
         //GameState Loop
         switch (curRoomState)
         {
+            case GameState.StartRoom:
+                break;
+
+             case GameState.StartGame:
+                break;
+
             case GameState.Room1:
                 //print("Room1");
                 break;
@@ -49,12 +56,18 @@ public class Game : MonoBehaviour
 
     public void switchRoom()
     {
-        if (roomNum == 1)
+        if (roomNum == 0)
+        {
+            StartRoom.SetActive(false);
+            Room1Object.SetActive(true);
+            roomNum = 1;
+        }
+
+        else if (roomNum == 1)
         {
             Room1Object.SetActive(false);
             Room2Object.SetActive(true);
             roomNum = 2;
-
         }
 
         else if (roomNum == 2)
@@ -62,7 +75,6 @@ public class Game : MonoBehaviour
             Room2Object.SetActive(false);
             Room1Object.SetActive(true);
             roomNum = 1;
-
         }
     }
 }
