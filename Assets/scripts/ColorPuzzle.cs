@@ -10,7 +10,7 @@ public class ColorPuzzle : MonoBehaviour
     public int count;
     public ColorPuzzleState colorPuzzleState;
 
-    public GameObject starBook;
+    public GameObject RightStarPiece;
     public GameObject emptyBookcase;
     public GameObject completedBookcase;
     public GameObject rBook;
@@ -54,7 +54,7 @@ public class ColorPuzzle : MonoBehaviour
     void ChangeGameObjects()
     {
         //enable completed bookcase so players can't re-activate puzzle, spawn empty star book
-        completedBookcase.SetActive(true); starBook.SetActive(true);
+        completedBookcase.SetActive(true); RightStarPiece.SetActive(true);
 
         //disable puzzle objects
         emptyBookcase.SetActive(false); rBook.SetActive(false); gBook.SetActive(false); bBook.SetActive(false);
