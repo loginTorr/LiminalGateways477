@@ -9,8 +9,7 @@ public enum NumPuzzleState {
     TWO,
     THREE,
     FOUR,
-    FIVE,
-    SIX_FINAL,
+    FIVE_FINAL,
     ERROR,
 }
 
@@ -52,12 +51,7 @@ public class NumberPuzzle : MonoBehaviour {
             break;
 
             case State.FOUR:
-            if (LastNumber == 5) { ChangeState(State.FIVE); }
-            else { ChangeState(State.ERROR); }
-            break;
-
-            case State.FIVE:
-            if (LastNumber == 6) { ChangeState(State.SIX_FINAL); }
+            if (LastNumber == 5) { ChangeState(State.FIVE_FINAL); }
             else { ChangeState(State.ERROR); }
             break;
 
@@ -81,11 +75,10 @@ public class NumberPuzzle : MonoBehaviour {
                 case State.TWO:
                 case State.THREE:
                 case State.FOUR:
-                case State.FIVE:
                 print("correct");
                 break;
 
-                case State.SIX_FINAL:
+                case State.FIVE_FINAL:
                 // spawn in the object
                 print("puzzle complete");
                 leftStarPiece.SetActive(true);

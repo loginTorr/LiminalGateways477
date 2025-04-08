@@ -14,7 +14,7 @@ public class Buttons : MonoBehaviour {
     }
 
     public void ButtonPress() {
-        if (Puzzle.State != NumPuzzleState.SIX_FINAL) {
+        if (Puzzle.State != NumPuzzleState.FIVE_FINAL) {
             Puzzle.Press(Number);
         }
     }
