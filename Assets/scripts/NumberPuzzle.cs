@@ -17,7 +17,7 @@ public enum NumPuzzleState {
 
 public class NumberPuzzle : MonoBehaviour {
     public State State { get; private set; }
-    public GameObject PuzzleComplete;
+    public GameObject leftStarPiece;
     public int LastNumber;
 
     void Start() {
@@ -88,6 +88,7 @@ public class NumberPuzzle : MonoBehaviour {
                 case State.SIX_FINAL:
                 // spawn in the object
                 print("puzzle complete");
+                leftStarPiece.SetActive(true);
                 break;
 
                 case State.ERROR:

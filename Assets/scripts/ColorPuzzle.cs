@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -10,6 +11,11 @@ public class ColorPuzzle : MonoBehaviour
     public ColorPuzzleState colorPuzzleState;
 
     public GameObject starBook;
+    public GameObject emptyBookcase;
+    public GameObject completedBookcase;
+    public GameObject rBook;
+    public GameObject gBook;
+    public GameObject bBook;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +37,7 @@ public class ColorPuzzle : MonoBehaviour
                     print("puzzle solved1");
                     colorPuzzleState = ColorPuzzleState.Solved;
                     count++;
-                    starBook.SetActive(true);
-
+                    ChangeGameObjects();
                 }
                 else
                 {
@@ -46,5 +51,14 @@ public class ColorPuzzle : MonoBehaviour
 
     }
 
+    void ChangeGameObjects()
+    {
+        //enable completed bookcase so players can't re-activate puzzle, spawn empty star book
+        completedBookcase.SetActive(true); starBook.SetActive(true);
+
+        //disable puzzle objects
+        emptyBookcase.SetActive(false); rBook.SetActive(false); gBook.SetActive(false); bBook.SetActive(false);
+
+    }
 }
 

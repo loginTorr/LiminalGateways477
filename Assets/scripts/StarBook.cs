@@ -8,6 +8,10 @@ public class StarBook : MonoBehaviour
 
     public GameObject CompletedBook;
     public GameObject EmptyBook;
+    public GameObject piece1;
+    public GameObject piece2;
+
+    public Vector3 bar;
 
     public StarBookState starBookState;
 
@@ -30,11 +34,9 @@ public class StarBook : MonoBehaviour
             case StarBookState.Filling:
                 if (count == 2)
                 {
-                    print("socketed!");
-                    CompletedBook.SetActive(true); EmptyBook.SetActive(false);
                     starBookState = StarBookState.Full;
                     count++;
-
+                    ChangeGameObects();
                 }
                 else
                 {
@@ -46,6 +48,13 @@ public class StarBook : MonoBehaviour
                 break;
         }
 
+    }
+
+    void ChangeGameObects()
+    {
+        CompletedBook.SetActive(true); 
+
+        EmptyBook.SetActive(false); piece1.SetActive(false); piece2.SetActive(false);
     }
 
 }
