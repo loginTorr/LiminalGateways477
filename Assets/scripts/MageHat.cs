@@ -26,7 +26,7 @@ public class MageHat : MonoBehaviour {
         GameObject Hat = args.interactableObject.transform.gameObject;
 
         if (Hat.name.Contains("Mage Hat")) { Clock.SetActive(true); }
-        else { Hat.SetActive(false); }
+        else { Clock.SetActive(false); }
     }
 
     private void OnSocketSelectExited(SelectExitEventArgs args) {
