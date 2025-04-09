@@ -4,7 +4,7 @@ using Tripolygon.UModelerX.Runtime.MessagePack.Resolvers;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public enum GameState { StartRoom, StartGame, Room1, Room2, changeRoom };
+public enum GameState { StartRoom, StartGame, Room1, Room2, changeRoom, GameOver };
 public enum ColorPuzzleState { Unsolved, Solving, Solved }
 
 public enum StarBookState { Empty, Filling, Full}
@@ -50,6 +50,9 @@ public class Game : MonoBehaviour
                 switchRoom();
                 break;
 
+            case GameState.GameOver:
+                break;
+
         }
 
     }
@@ -75,6 +78,11 @@ public class Game : MonoBehaviour
             Room2Object.SetActive(false);
             Room1Object.SetActive(true);
             roomNum = 1;
+        }
+
+        else if (roomNum == 3)
+        {
+            return;
         }
     }
 }
