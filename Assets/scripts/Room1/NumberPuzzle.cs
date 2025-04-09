@@ -81,6 +81,7 @@ public class NumberPuzzle : MonoBehaviour {
                 case State.FIVE_FINAL:
                 // spawn in the object
                 print("puzzle complete");
+                SoundManager.Instance.Play(SoundType.PUZZLECOMPLETE);
                 leftStarPiece.SetActive(true);
                 break;
 
