@@ -33,14 +33,14 @@ public class ClockPuzzle : MonoBehaviour
 
     public void SetMinute(int number)
     {
-        clockNumberScript.LastMinuteNumber = number;
-        Debug.Log("Minute Num == " + clockNumberScript.LastMinuteNumber);
+        clockNumberScript.MinuteNumber = number;
+        Debug.Log("Minute Num == " + clockNumberScript.MinuteNumber);
     }
 
     public void SetHour(int number)
     {
-        clockNumberScript.LastHourNumber = number;
-        Debug.Log("Hour Num == " + clockNumberScript.LastHourNumber);
+        clockNumberScript.HourNumber = number;
+        Debug.Log("Hour Num == " + clockNumberScript.HourNumber);
     }
 
 

@@ -16,7 +16,7 @@ public class MageHat : MonoBehaviour {
     }
 
     void Start() {
-        Clock.SetActive(false);
+
     }
 
     void Update() {  

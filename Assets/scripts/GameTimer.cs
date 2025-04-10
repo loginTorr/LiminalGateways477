@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class GameTimer : MonoBehaviour {
     public Game Game;
     public float TimerSound = 60.0f;
     public float TimeLeft = 600.0f;
+
+
     void Start() { 
     }
 
@@ -26,7 +29,10 @@ public class GameTimer : MonoBehaviour {
 
     void GameOver() {
         TimeLeft = 600.0f;
+        Game.roomNum = 3;
+        Game.switchRoom();
         print("game over");
+
     }
     
 }

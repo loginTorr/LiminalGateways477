@@ -24,6 +24,9 @@ public class ClockNumbers : MonoBehaviour
     public ClockPuzzle clockPuzzleScript;
     public State State { get; private set; }
 
+    private bool minuteCorrect;
+    private bool hourCorrect;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,31 +34,65 @@ public class ClockNumbers : MonoBehaviour
         LastMinuteNumber = 0;
         LastHourNumber = 0;
         State = State.IDLE;
+        minuteCorrect = false;
+        hourCorrect = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        switch (State)
+
+        if (MinuteNumber != LastMinuteNumber || HourNumber != LastHourNumber)
         {
-            case State.IDLE:
-                if (LastHourNumber == 4 & LastMinuteNumber == 20) { ChangeState(State.ONE_CORRECT); }
-                else { ChangeState(State.ERROR); }
-                break;
+            switch (State)
+            {
+                case State.IDLE:
+                    if (HourNumber == 4) hourCorrect = true;
+                    if (MinuteNumber == 20) minuteCorrect = true;
 
-            case State.ONE_CORRECT:
-                if (LastHourNumber == 2 & LastMinuteNumber == 0) { ChangeState(State.TWO_CORRECT); }
-                else { ChangeState(State.ERROR); }
-                break;
+                    if (hourCorrect && minuteCorrect)
+                    {
+                        Debug.Log("FirstRight");
+                        ChangeState(State.ONE_CORRECT);
+                        hourCorrect = false; minuteCorrect = false;
+                    }
+                    break;
 
-            case State.TWO_CORRECT:
-                if (LastHourNumber == 10 & LastMinuteNumber == 15) { ChangeState(State.THREE_FINAL); }
-                else { ChangeState(State.ERROR); }
-                break;
+                case State.ONE_CORRECT:
+                    if (HourNumber == 2) hourCorrect = true; else { hourCorrect = false; }
+                    if (MinuteNumber == 0) minuteCorrect = true; else { minuteCorrect = false; }
 
-            case State.ERROR:
-                break;
+                    if (hourCorrect && minuteCorrect)
+                    {
+                        Debug.Log("SecondRight");
+
+                        ChangeState(State.TWO_CORRECT);
+                        hourCorrect = false; minuteCorrect = false;
+
+                    }
+                    break;
+
+                case State.TWO_CORRECT:
+                    if (HourNumber == 10) hourCorrect = true; else { hourCorrect = false; }
+                    if (MinuteNumber == 15) minuteCorrect = true; else { minuteCorrect = false; }
+
+                    if (hourCorrect && minuteCorrect)
+                    {
+                        Debug.Log("ThirdRight");
+                        ChangeState(State.THREE_FINAL);
+                    }
+                    break;
+
+                case State.ERROR:
+                    if (MinuteNumber == 0 && HourNumber == 0)
+                    {
+                        ChangeState(State.IDLE);
+                    }
+                    break;
+            }
         }
+        LastMinuteNumber = MinuteNumber;
+        LastHourNumber = HourNumber;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -72,6 +109,12 @@ public class ClockNumbers : MonoBehaviour
         }
     }
 
+    private void ResetCorrectFlags()
+    {
+        minuteCorrect = false;
+        hourCorrect = false;
+    }
+
     private void ChangeState(State NewState)
     {
         if (State != NewState)
@@ -82,10 +125,12 @@ public class ClockNumbers : MonoBehaviour
             {
                 case State.IDLE:
                     // does nothing
+                    ResetCorrectFlags();
                     break;
 
                 case State.ONE_CORRECT:
                 case State.TWO_CORRECT:
+                    ResetCorrectFlags();
                     print("correct");
                     break;
 

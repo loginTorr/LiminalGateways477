@@ -16,12 +16,17 @@ public class Lecturn : MonoBehaviour
     public GameObject NoScene;
     public GameObject NatureScene;
     public GameObject VideoScene;
-    public GameObject EndRoom;
+    public GameObject GameOverScreen;
+    public GameObject WinScreen;
+
+    public GameObject EmptyBook;
+    public GameObject CompletedBook;
+    public GameObject WinBook;
 
     private XRSocketInteractor socket;
 
 
-
+    private Vector3 EmptyBookInitPos;
 
     void Awake()
     {
@@ -32,7 +37,9 @@ public class Lecturn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        EmptyBookInitPos = EmptyBook.transform.position;
         gameScript = FindObjectOfType<Game>();
+
     }
 
     // Update is called once per frame
@@ -48,7 +55,8 @@ public class Lecturn : MonoBehaviour
 
         if (book.name.Contains("EmptyStarBook") & gameScript.curRoomState == GameState.StartRoom)
         {
-            StartScreen.SetActive(false); NoScene.SetActive(true);
+            StartScreen.SetActive(false); WinScreen.SetActive(false); GameOverScreen.SetActive(false); NoScene.SetActive(true);
+            SoundManager.Instance.Play(SoundType.TELEPORT);
             gameScript.switchRoom();
         }
 
@@ -64,6 +72,24 @@ public class Lecturn : MonoBehaviour
 
         if (book.name.Contains("StarBookFull"))
         {
+            SoundManager.Instance.Play(SoundType.TELEPORT);
+            gameScript.switchRoom();
+        }
+
+        if (book.name.Contains("EmptyStarBook") & gameScript.curRoomState == GameState.GameOver)
+        {
+            gameScript.roomNum = 0;
+            GameOverScreen.SetActive(false); NoScene.SetActive(true);
+            SoundManager.Instance.Play(SoundType.TELEPORT);
+            gameScript.switchRoom();
+        }
+
+        if (book.name.Contains("WinBook"))
+        {
+            WinScreen.SetActive(true); NoScene.SetActive(false);
+            EmptyBook.SetActive(true); CompletedBook.SetActive(false); WinBook.SetActive(false);
+            EmptyBook.transform.position = EmptyBookInitPos;
+            gameScript.roomNum = 3;
             gameScript.switchRoom();
         }
 

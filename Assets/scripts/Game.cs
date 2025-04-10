@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Tripolygon.UModelerX.Runtime;
 using Tripolygon.UModelerX.Runtime.MessagePack.Resolvers;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -15,6 +16,15 @@ public class Game : MonoBehaviour
     public GameObject StartRoom;
     public GameObject Room1Object;
     public GameObject Room2Object;
+
+
+    public GameObject CompletedBook;
+    public GameObject EmptyBook;
+
+    public GameObject LooseScreen;
+    public GameObject NoScreen;
+
+
 
     public int roomNum;
 
@@ -58,11 +68,10 @@ public class Game : MonoBehaviour
 
     public void switchRoom()
     {
-        SoundManager.Instance.Play(SoundType.TELEPORT);
         if (roomNum == 0)
         {
             curRoomState = GameState.Room1;
-            StartRoom.SetActive(false);
+            StartRoom.SetActive(false); 
             Room1Object.SetActive(true);
             roomNum = 1;
         }
@@ -85,7 +94,24 @@ public class Game : MonoBehaviour
 
         else if (roomNum == 3)
         {
-            return;
+            curRoomState = GameState.StartRoom;
+
+            StartRoom.SetActive(true);
+            Room1Object.SetActive(false); Room2Object.SetActive(false);
+            roomNum = 0;
         }
+
+        else if (roomNum == 4)
+        {
+            curRoomState = GameState.StartRoom;
+
+            StartRoom.SetActive(true);
+            Room1Object.SetActive(false); Room2Object.SetActive(false);
+            EmptyBook.SetActive(true); CompletedBook.SetActive(false);
+            LooseScreen.SetActive(true); NoScreen.SetActive(false);
+            roomNum = 0;
+
+        }
+
     }
 }
