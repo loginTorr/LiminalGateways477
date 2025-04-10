@@ -156,6 +156,7 @@ public class FSMButtonPuzzleController_Fixed : MonoBehaviour
         if (allCorrect)
         {
             TransitionToState(PuzzleState.Solved);
+            SoundManager.Instance.Play(SoundType.PUZZLECOMPLETE);
             onPuzzleSolved.Invoke();
         }
         else if (anyOverPressed && resetOnIncorrect)

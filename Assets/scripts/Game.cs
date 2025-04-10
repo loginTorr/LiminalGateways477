@@ -58,6 +58,7 @@ public class Game : MonoBehaviour
 
     public void switchRoom()
     {
+        SoundManager.Instance.Play(SoundType.TELEPORT);
         if (roomNum == 0)
         {
             curRoomState = GameState.Room1;

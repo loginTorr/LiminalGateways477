@@ -9,6 +9,7 @@ public enum SoundType {
     ROOM1AMBIENT,
     ROOM2AMBIENT,
     TELEPORT,
+    DONG,
 }
 
 public class SoundCollection {
@@ -63,6 +64,7 @@ public class SoundManager : MonoBehaviour {
             { SoundType.ROOM1AMBIENT, new("Room1Ambient") },
             { SoundType.ROOM2AMBIENT, new("Room2Ambient") },
             { SoundType.TELEPORT, new("Teleport") },
+            { SoundType.DONG, new("Dong") },
         };
     }
 
