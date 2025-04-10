@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3816005912016375107}
   - component: {fileID: 675577318691902351}
   - component: {fileID: 8066224649358592252}
+  - component: {fileID: 6505757341613646173}
   m_Layer: 0
   m_Name: Red Book
   m_TagString: Untagged
@@ -133,6 +134,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6505757341613646173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252186225364361210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f808ed70bea804aaf50b69db687d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-6937727350363828570
 MonoBehaviour:
   m_ObjectHideFlags: 0

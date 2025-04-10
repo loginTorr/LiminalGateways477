@@ -34,6 +34,7 @@ public class ColorPuzzle : MonoBehaviour
             case ColorPuzzleState.Solving:
                 if (count == 3)
                 {
+                    SoundManager.Instance.Play(SoundType.PUZZLECOMPLETE);
                     print("puzzle solved1");
                     colorPuzzleState = ColorPuzzleState.Solved;
                     count++;

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 946032152487315746}
   - component: {fileID: 6724767543364225204}
   - component: {fileID: 125761919545004288}
+  - component: {fileID: -8284241953374387798}
   m_Layer: 0
   m_Name: Green Book
   m_TagString: Untagged
@@ -133,6 +134,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-8284241953374387798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67510796736194371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f808ed70bea804aaf50b69db687d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &-4084131815042337034
 Mesh:
   m_ObjectHideFlags: 0
