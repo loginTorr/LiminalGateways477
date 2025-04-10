@@ -6,7 +6,6 @@ using UnityEngine;
 
 public enum GameState { StartRoom, StartGame, Room1, Room2, changeRoom, GameOver };
 public enum ColorPuzzleState { Unsolved, Solving, Solved }
-
 public enum StarBookState { Empty, Filling, Full}
 
 public class Game : MonoBehaviour
@@ -61,6 +60,7 @@ public class Game : MonoBehaviour
     {
         if (roomNum == 0)
         {
+            curRoomState = GameState.Room1;
             StartRoom.SetActive(false);
             Room1Object.SetActive(true);
             roomNum = 1;
@@ -68,6 +68,7 @@ public class Game : MonoBehaviour
 
         else if (roomNum == 1)
         {
+            curRoomState = GameState.Room2;
             Room1Object.SetActive(false);
             Room2Object.SetActive(true);
             roomNum = 2;
@@ -75,6 +76,7 @@ public class Game : MonoBehaviour
 
         else if (roomNum == 2)
         {
+            curRoomState = GameState.Room1;
             Room2Object.SetActive(false);
             Room1Object.SetActive(true);
             roomNum = 1;

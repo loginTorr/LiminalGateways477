@@ -12,9 +12,11 @@ public class Lecturn : MonoBehaviour
 
     public Game gameScript;
 
+    public GameObject StartScreen;
     public GameObject NoScene;
     public GameObject NatureScene;
     public GameObject VideoScene;
+    public GameObject EndRoom;
 
     private XRSocketInteractor socket;
 
@@ -46,6 +48,7 @@ public class Lecturn : MonoBehaviour
 
         if (book.name.Contains("EmptyStarBook") & gameScript.curRoomState == GameState.StartRoom)
         {
+            StartScreen.SetActive(false); NoScene.SetActive(true);
             gameScript.switchRoom();
         }
 

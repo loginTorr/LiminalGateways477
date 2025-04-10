@@ -1,8 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ClockPuzzle : MonoBehaviour
 {
     public bool isMinuteRotating;
     public bool isHourRotating;
@@ -11,6 +15,9 @@ public class NewBehaviourScript : MonoBehaviour
 
     public GameObject minuteHand;
     public GameObject hourHand;
+
+    public ClockNumbers clockNumberScript;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,42 +28,28 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    private void OnTriggerStay(Collider other)
+    public void SetMinute(int number)
     {
-        if (isMinuteRotating == false & minuteHand.name.Contains("MinuteHand"))
-        {
-            //curNum = object.name
-            //set curMinuteNum == curNum
-            Debug.Log("Minute Num == ");
-        }
-
-        if (isHourRotating == false & hourHand.name.Contains("HourHand"))
-        {
-            //curNum = object.name
-            //set curMinuteNum == curNum
-            Debug.Log("Hour Num == ");
-        }
-
-        else
-        {
-            //getLastCurNum
-        }
+        clockNumberScript.LastMinuteNumber = number;
+        Debug.Log("Minute Num == " + clockNumberScript.LastMinuteNumber);
     }
 
-    public void MinuteRotating()
+    public void SetHour(int number)
     {
-        isMinuteRotating = true;
-        Debug.Log("RotatingMin");
+        clockNumberScript.LastHourNumber = number;
+        Debug.Log("Hour Num == " + clockNumberScript.LastHourNumber);
     }
 
-    public void MinuteDoneRotating()
-    {
-        isMinuteRotating = false; Debug.Log("Done RotatingMin");
 
-    }
+    public void MinuteRotating() { isMinuteRotating = true; Debug.Log("RotatingMin"); }
 
+    public void MinuteDoneRotating() { isMinuteRotating = false; Debug.Log("Done RotatingMin"); }
+
+    public void HourRotating() { isHourRotating = true; Debug.Log("RotatingHour"); }
+
+    public void HourDoneRotating() { isHourRotating = false; Debug.Log("Done RotatingHour"); }
 
 }
