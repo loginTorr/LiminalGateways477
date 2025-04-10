@@ -1629,6 +1629,8 @@ GameObject:
   - component: {fileID: 1508514109}
   - component: {fileID: 1508514110}
   - component: {fileID: 1508514111}
+  - component: {fileID: 1508514112}
+  - component: {fileID: 1508514113}
   m_Layer: 0
   m_Name: SoundObject
   m_TagString: Untagged
@@ -1774,6 +1776,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftStarPiece: {fileID: 1066278556}
   LastNumber: 0
+--- !u!114 &1508514112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508514106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf0660ce62514d4a8286eb305f1d968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundInterval: 30
+--- !u!114 &1508514113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508514106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e077e732e5a3c4481ebc2d3618438e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundInterval: 30
 --- !u!114 &1662840663 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8487785324574293205, guid: 66072374e3813d746adb716fef94a6bb, type: 3}

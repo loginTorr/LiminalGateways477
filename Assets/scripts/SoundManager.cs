@@ -6,6 +6,8 @@ using UnityEngine;
 public enum SoundType {
     PICKUP,
     PUZZLECOMPLETE,
+    ROOM1AMBIENT,
+    ROOM2AMBIENT
 }
 
 public class SoundCollection {
@@ -57,6 +59,8 @@ public class SoundManager : MonoBehaviour {
         sounds = new() {
             { SoundType.PICKUP, new("Pickup1") },
             { SoundType.PUZZLECOMPLETE, new("Magic") },
+            { SoundType.ROOM1AMBIENT, new("Room1Ambient") },
+            { SoundType.ROOM2AMBIENT, new("Room2Ambient") },
         };
     }
 
