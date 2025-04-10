@@ -7,7 +7,8 @@ public enum SoundType {
     PICKUP,
     PUZZLECOMPLETE,
     ROOM1AMBIENT,
-    ROOM2AMBIENT
+    ROOM2AMBIENT,
+    TELEPORT,
 }
 
 public class SoundCollection {
@@ -61,6 +62,7 @@ public class SoundManager : MonoBehaviour {
             { SoundType.PUZZLECOMPLETE, new("Magic") },
             { SoundType.ROOM1AMBIENT, new("Room1Ambient") },
             { SoundType.ROOM2AMBIENT, new("Room2Ambient") },
+            { SoundType.TELEPORT, new("Teleport") },
         };
     }
 
