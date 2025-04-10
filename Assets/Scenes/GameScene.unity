@@ -753,6 +753,79 @@ Transform:
   - {fileID: 207942706}
   m_Father: {fileID: 651536632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &74908583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 74908584}
+  - component: {fileID: 74908586}
+  - component: {fileID: 74908587}
+  m_Layer: 0
+  m_Name: 5 Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &74908584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74908583}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.43098968, y: 0.56057817, z: -0.56057817, w: 0.43098968}
+  m_LocalPosition: {x: 3.77, y: -6.0302577, z: -1.2}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061985954}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -104.892}
+--- !u!136 &74908586
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74908583}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &74908587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74908583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 25
+  HourNumber: 5
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1 &79718952 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6663116998049753541, guid: eb9812b92f370d54fb2e32b69fbf7ff5, type: 3}
@@ -2194,6 +2267,79 @@ Transform:
   - {fileID: 271893028}
   m_Father: {fileID: 905208860}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &238358240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 238358241}
+  - component: {fileID: 238358243}
+  - component: {fileID: 238358244}
+  m_Layer: 0
+  m_Name: 6 Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &238358241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238358240}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.27446076, y: 0.65166813, z: -0.65166813, w: 0.27446076}
+  m_LocalPosition: {x: 2.49, y: -6.0302577, z: -3.2}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061985954}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -134.322}
+--- !u!136 &238358243
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238358240}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &238358244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238358240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 30
+  HourNumber: 6
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1001 &243108092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3874,6 +4020,79 @@ MonoBehaviour:
   modifierStack:
     modifierList: []
     currentIndex: -1
+--- !u!1 &373221974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 373221975}
+  - component: {fileID: 373221977}
+  - component: {fileID: 373221978}
+  m_Layer: 0
+  m_Name: 10 Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &373221975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373221974}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5571003, y: 0.43547598, z: -0.43547598, w: 0.5571003}
+  m_LocalPosition: {x: -5.12, y: -6.0302577, z: -1.05}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061985954}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -76.028}
+--- !u!136 &373221977
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373221974}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &373221978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373221974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 50
+  HourNumber: 10
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1001 &373808126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7020,7 +7239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 754017539}
   - component: {fileID: 754017541}
-  - component: {fileID: 754017540}
+  - component: {fileID: 754017542}
   m_Layer: 0
   m_Name: 1 Collider
   m_TagString: Untagged
@@ -7037,31 +7256,12 @@ Transform:
   m_GameObject: {fileID: 754017538}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7005121, y: -0.09634718, z: 0.09634718, w: 0.7005121}
-  m_LocalPosition: {x: -2.1990757, y: -6.0302577, z: 4.141568}
-  m_LocalScale: {x: -0.44238108, y: 4.876271, z: 1.0819271}
+  m_LocalPosition: {x: -2.31, y: -6.0302577, z: 4.58}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1061985954}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 15.662}
---- !u!114 &754017540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754017538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185b9d3791ec6db4f9dee602c370ed14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMinuteRotating: 0
-  isHourRotating: 0
-  curMinuteNum: 0
-  curHourNum: 0
-  minuteHand: {fileID: 408311815}
-  hourHand: {fileID: 776416683}
-  number: 1
 --- !u!136 &754017541
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7077,7 +7277,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7085,6 +7285,23 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &754017542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754017538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 5
+  HourNumber: 1
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1001 &759144059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8893,6 +9110,79 @@ Transform:
   - {fileID: 665038649}
   m_Father: {fileID: 905208860}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &818503418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818503419}
+  - component: {fileID: 818503421}
+  - component: {fileID: 818503422}
+  m_Layer: 0
+  m_Name: 8 Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &818503419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818503418}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.6994036, y: 0.10408969, z: -0.10408969, w: 0.6994036}
+  m_LocalPosition: {x: -2.19, y: -6.0302577, z: -4.08}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061985954}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -16.93}
+--- !u!136 &818503421
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818503418}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &818503422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818503418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 40
+  HourNumber: 8
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1001 &820035750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10198,7 +10488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021451530}
   - component: {fileID: 1021451532}
-  - component: {fileID: 1021451531}
+  - component: {fileID: 1021451533}
   m_Layer: 0
   m_Name: 3 Collider
   m_TagString: Untagged
@@ -10214,32 +10504,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021451529}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.65689844, y: 0.26169536, z: -0.26169536, w: 0.65689844}
-  m_LocalPosition: {x: 2.26, y: -6.0302577, z: 3.01}
-  m_LocalScale: {x: -0.44238108, y: 4.8762712, z: 1.0819271}
+  m_LocalRotation: {x: 0.6513367, y: 0.27524623, z: -0.27524623, w: 0.6513367}
+  m_LocalPosition: {x: 2.54, y: -6.0302577, z: 3.49}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1061985954}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -43.443}
---- !u!114 &1021451531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021451529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185b9d3791ec6db4f9dee602c370ed14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMinuteRotating: 0
-  isHourRotating: 0
-  curMinuteNum: 0
-  curHourNum: 0
-  minuteHand: {fileID: 408311815}
-  hourHand: {fileID: 776416683}
-  number: 3
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -45.817}
 --- !u!136 &1021451532
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10255,7 +10526,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10263,6 +10534,23 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1021451533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021451529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 15
+  HourNumber: 3
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1001 &1024078263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10820,6 +11108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1061985954}
+  - component: {fileID: 1061985955}
   m_Layer: 0
   m_Name: NumberColliders
   m_TagString: Untagged
@@ -10844,8 +11133,35 @@ Transform:
   - {fileID: 2008105683}
   - {fileID: 1021451530}
   - {fileID: 2129504382}
+  - {fileID: 74908584}
+  - {fileID: 238358241}
+  - {fileID: 1865954572}
+  - {fileID: 818503419}
+  - {fileID: 1571482694}
+  - {fileID: 373221975}
+  - {fileID: 1131645884}
+  - {fileID: 1936969646}
   m_Father: {fileID: 34193396}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061985955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061985953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185b9d3791ec6db4f9dee602c370ed14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMinuteRotating: 0
+  isHourRotating: 0
+  curMinuteNum: 0
+  curHourNum: 0
+  minuteHand: {fileID: 408311815}
+  hourHand: {fileID: 281708450}
+  clockNumberScript: {fileID: 0}
 --- !u!1 &1071435528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 67510796736194371, guid: c207d4d987983df48965e5bf071d8157, type: 3}
@@ -11389,6 +11705,79 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.17029941, y: 0.28779554, z: 0.33856225}
   m_Center: {x: -8.791195, y: 1.518102, z: 0.899821}
+--- !u!1 &1131645883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131645884}
+  - component: {fileID: 1131645886}
+  - component: {fileID: 1131645887}
+  m_Layer: 0
+  m_Name: 11 Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131645884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131645883}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.43098968, y: 0.56057817, z: -0.56057817, w: 0.43098968}
+  m_LocalPosition: {x: -5.15, y: -6.0302577, z: 1.19}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061985954}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -104.892}
+--- !u!136 &1131645886
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131645883}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1131645887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131645883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 55
+  HourNumber: 11
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1 &1142529963 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2308706482245396093, guid: 66dad3a51cc7c3941b87a3c06a1fe2e1, type: 3}
@@ -13383,7 +13772,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1061985955}
         m_TargetAssemblyTypeName: ClockPuzzle, Assembly-CSharp
         m_MethodName: MinuteRotating
         m_Mode: 1
@@ -13398,7 +13787,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1061985955}
         m_TargetAssemblyTypeName: ClockPuzzle, Assembly-CSharp
         m_MethodName: MinuteDoneRotating
         m_Mode: 1
@@ -14871,7 +15260,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1061985955}
         m_TargetAssemblyTypeName: ClockPuzzle, Assembly-CSharp
         m_MethodName: HourRotating
         m_Mode: 1
@@ -14886,7 +15275,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1061985955}
         m_TargetAssemblyTypeName: ClockPuzzle, Assembly-CSharp
         m_MethodName: HourDoneRotating
         m_Mode: 1
@@ -15996,6 +16385,79 @@ Transform:
   - {fileID: 2128993382}
   m_Father: {fileID: 905208860}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1571482693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1571482694}
+  - component: {fileID: 1571482696}
+  - component: {fileID: 1571482697}
+  m_Layer: 0
+  m_Name: 9 Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1571482694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571482693}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.66255367, y: 0.24702764, z: -0.24702764, w: 0.66255367}
+  m_LocalPosition: {x: -4.23, y: -6.0302577, z: -3}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061985954}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -40.895}
+--- !u!136 &1571482696
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571482693}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1571482697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571482693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 45
+  HourNumber: 9
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1001 &1596781662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18159,6 +18621,79 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.87, z: 0.3925307}
   m_Center: {x: -0.5, y: 1.435, z: 0.19626535}
+--- !u!1 &1865954571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1865954572}
+  - component: {fileID: 1865954574}
+  - component: {fileID: 1865954575}
+  m_Layer: 0
+  m_Name: 7 Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1865954572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865954571}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0844733, y: 0.70204294, z: -0.70204294, w: 0.0844733}
+  m_LocalPosition: {x: 0.19, y: -6.0302577, z: -4.15}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061985954}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -166.278}
+--- !u!136 &1865954574
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865954571}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1865954575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865954571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 35
+  HourNumber: 7
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!4 &1874869604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687845305960791087, guid: a5275e57907327743bed7da4ef417738, type: 3}
@@ -18727,6 +19262,79 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1936969645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1936969646}
+  - component: {fileID: 1936969648}
+  - component: {fileID: 1936969649}
+  m_Layer: 0
+  m_Name: 12 Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1936969646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936969645}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.2790689, y: 0.6497081, z: -0.6497081, w: 0.2790689}
+  m_LocalPosition: {x: -3.99, y: -6.0302577, z: 3.23}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061985954}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -133.51}
+--- !u!136 &1936969648
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936969645}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1936969649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936969645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 0
+  HourNumber: 12
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1001 &1942039443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19461,7 +20069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2008105683}
   - component: {fileID: 2008105685}
-  - component: {fileID: 2008105684}
+  - component: {fileID: 2008105686}
   m_Layer: 0
   m_Name: 2 Collider
   m_TagString: Untagged
@@ -19477,32 +20085,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008105682}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.70510274, y: 0.05319942, z: -0.05319942, w: 0.70510274}
-  m_LocalPosition: {x: -0.08, y: -6.0302577, z: 3.89}
-  m_LocalScale: {x: -0.44238108, y: 4.8762712, z: 1.0819271}
+  m_LocalRotation: {x: 0.70385754, y: 0.06771033, z: -0.06771033, w: 0.70385754}
+  m_LocalPosition: {x: 0.06, y: -6.0302577, z: 4.81}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1061985954}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -8.629}
---- !u!114 &2008105684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008105682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185b9d3791ec6db4f9dee602c370ed14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMinuteRotating: 0
-  isHourRotating: 0
-  curMinuteNum: 0
-  curHourNum: 0
-  minuteHand: {fileID: 408311815}
-  hourHand: {fileID: 776416683}
-  number: 2
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -10.99}
 --- !u!136 &2008105685
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19518,7 +20107,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -19526,6 +20115,23 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2008105686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008105682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 10
+  HourNumber: 2
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!1 &2020958485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5026779522381710682, guid: 278f405c2e9a7c045883a1ff98d73c59, type: 3}
@@ -21190,9 +21796,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2129504382}
   - component: {fileID: 2129504384}
-  - component: {fileID: 2129504383}
+  - component: {fileID: 2129504385}
   m_Layer: 0
-  m_Name: 3 Collider (1)
+  m_Name: 4 Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21206,32 +21812,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129504381}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.65689844, y: 0.26169536, z: -0.26169536, w: 0.65689844}
-  m_LocalPosition: {x: 2.26, y: -6.0302577, z: 3.01}
-  m_LocalScale: {x: -0.44238108, y: 4.8762712, z: 1.0819271}
+  m_LocalRotation: {x: 0.5639097, y: 0.4266215, z: -0.4266215, w: 0.5639097}
+  m_LocalPosition: {x: 3.84, y: -6.0302577, z: 1.24}
+  m_LocalScale: {x: -0.44238108, y: 3.5, z: 1.0819271}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1061985954}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -43.443}
---- !u!114 &2129504383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129504381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 185b9d3791ec6db4f9dee602c370ed14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMinuteRotating: 0
-  isHourRotating: 0
-  curMinuteNum: 0
-  curHourNum: 0
-  minuteHand: {fileID: 408311815}
-  hourHand: {fileID: 776416683}
-  number: 3
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -74.218}
 --- !u!136 &2129504384
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21247,7 +21834,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -21255,6 +21842,23 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2129504385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129504381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3d926b6f1c254a98a3f05d3cbb350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinuteNumber: 20
+  HourNumber: 4
+  LastMinuteNumber: 0
+  LastHourNumber: 0
+  clockPuzzleScript: {fileID: 1061985955}
 --- !u!4 &2131742880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 140376521624396726, guid: 66072374e3813d746adb716fef94a6bb, type: 3}
