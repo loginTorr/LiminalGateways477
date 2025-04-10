@@ -370,6 +370,7 @@ Transform:
   - {fileID: 1874869604}
   - {fileID: 1596781663}
   - {fileID: 866063690}
+  - {fileID: 96348837}
   m_Father: {fileID: 1968456322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &36818386
@@ -776,7 +777,7 @@ MonoBehaviour:
   materialsPath: []
   currentMaterialIndex: -1
   renderableMesh:
-    name: UM_OperatedMesh_738ac9aa-ab4b-40ca-b778-00a909995cd1
+    name: UM_OperatedMesh_4aa12a7c-84f3-41c0-831a-6a59d931ffa3
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: c993a59136187ab468b2135730b8e307, type: 2}
     buidVersion:
@@ -788,7 +789,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 738ac9aa-ab4b-40ca-b778-00a909995cd1
+  sourceMeshRendererGUID: 4aa12a7c-84f3-41c0-831a-6a59d931ffa3
   guid: 19c6b026-1c0b-47e4-b402-5c0d5e08ca79
   localOptions:
     RecalculateTangents: 0
@@ -826,6 +827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 96348837}
+  - component: {fileID: 96348838}
   m_Layer: 0
   m_Name: Button Puzzle Controller
   m_TagString: Untagged
@@ -841,13 +843,54 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96348836}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.136795, y: -7.533191, z: 14.094744}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.855061, y: -9.689842, z: 11.15946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 34193396}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &96348838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96348836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac263b0b8753bee49970a7546b777732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - buttonInteractable: {fileID: 1972671158}
+    requiredPresses: 1
+    currentPresses: 0
+  - buttonInteractable: {fileID: 2083253861}
+    requiredPresses: 8
+    currentPresses: 0
+  - buttonInteractable: {fileID: 1272815518}
+    requiredPresses: 3
+    currentPresses: 0
+  - buttonInteractable: {fileID: 2103991334}
+    requiredPresses: 5
+    currentPresses: 0
+  resetOnIncorrect: 1
+  buttonCooldown: 0.5
+  stateTransitionDelay: 0.2
+  showDebugInfo: 1
+  onPuzzleSolved:
+    m_PersistentCalls:
+      m_Calls: []
+  onPuzzleFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  onPuzzleReset:
+    m_PersistentCalls:
+      m_Calls: []
+  onButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &113668941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,7 +1320,7 @@ MonoBehaviour:
   - Assets/Materials/Books.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_fe60e19c-0597-4563-afa9-82c2e92db145
+    name: UM_OperatedMesh_86b6dae6-c36a-4e87-bb8f-f14c3a18974c
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 8792fd27164f8ce40880b1c2d57cc8f1, type: 2}
     buidVersion:
@@ -1289,7 +1332,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: fe60e19c-0597-4563-afa9-82c2e92db145
+  sourceMeshRendererGUID: 86b6dae6-c36a-4e87-bb8f-f14c3a18974c
   guid: d67bfab3-fb69-4af0-8e6e-02b45142dbfc
   localOptions:
     RecalculateTangents: 0
@@ -2341,7 +2384,7 @@ MonoBehaviour:
   - Assets/Materials/Mirror Center.mat
   currentMaterialIndex: -1
   renderableMesh:
-    name: UM_OperatedMesh_2c76eb7d-aecb-4008-a228-dee2186d2719
+    name: UM_OperatedMesh_c694953b-93c0-4035-b9c5-170172b37c10
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 5a2b55e735ecd4d4daf5b13b2cb5fd5b, type: 2}
     buidVersion:
@@ -2353,7 +2396,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 2c76eb7d-aecb-4008-a228-dee2186d2719
+  sourceMeshRendererGUID: c694953b-93c0-4035-b9c5-170172b37c10
   guid: e0ea604f-d504-48e6-8afb-2c4ce15b54e9
   localOptions:
     RecalculateTangents: 0
@@ -3748,7 +3791,7 @@ MonoBehaviour:
   - Assets/Materials/Bookcase.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_eb59e695-8363-48a8-8796-250d28de7482
+    name: UM_OperatedMesh_28dab1f2-8114-4a9e-a7aa-59762a096379
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: c339531227c536f4e95d7e951ed7fbe3, type: 2}
     buidVersion:
@@ -3760,7 +3803,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: eb59e695-8363-48a8-8796-250d28de7482
+  sourceMeshRendererGUID: 28dab1f2-8114-4a9e-a7aa-59762a096379
   guid: bb668046-8f22-406f-aca5-b23bfaa74119
   localOptions:
     RecalculateTangents: 0
@@ -7002,7 +7045,7 @@ MonoBehaviour:
   - Assets/Materials/Mirror.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_ec128b6f-7600-44ea-855e-f1a85f1b0ac7
+    name: UM_OperatedMesh_3c65aac1-6232-40ea-8151-940c6fd227ae
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 55073a0b9c9815945a4710ce057d8da2, type: 2}
     buidVersion:
@@ -7014,7 +7057,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: ec128b6f-7600-44ea-855e-f1a85f1b0ac7
+  sourceMeshRendererGUID: 3c65aac1-6232-40ea-8151-940c6fd227ae
   guid: d03ce0c8-d0f9-4745-8755-020c4a18dbf4
   localOptions:
     RecalculateTangents: 0
@@ -9422,7 +9465,7 @@ MonoBehaviour:
   materialsPath: []
   currentMaterialIndex: -1
   renderableMesh:
-    name: UM_OperatedMesh_03119a07-b522-4d76-aa4a-f386816e7fcf
+    name: UM_OperatedMesh_f2a7d9b5-43d2-4a42-a219-d85a1db58466
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: d7206ada0c86dc94fbde8ad0e9801b39, type: 2}
     buidVersion:
@@ -9434,7 +9477,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 03119a07-b522-4d76-aa4a-f386816e7fcf
+  sourceMeshRendererGUID: f2a7d9b5-43d2-4a42-a219-d85a1db58466
   guid: 19c6b026-1c0b-47e4-b402-5c0d5e08ca79
   localOptions:
     RecalculateTangents: 0
@@ -10990,20 +11033,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookButton
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 365257721316361150, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1272815511}
+      addedObject: {fileID: 1272815518}
+    - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1272815519}
   m_SourcePrefab: {fileID: 100100000, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
 --- !u!4 &1272815504 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4803614339566677342, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
   m_PrefabInstance: {fileID: 1272815503}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1272815511
+--- !u!114 &1272815518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11012,7 +11059,79 @@ MonoBehaviour:
   m_GameObject: {fileID: 900676492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaea78acdebb74547920239e7b94f82d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+--- !u!114 &1272815519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900676492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a25b4b34c202d740bdaed6e6b0847be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pressDistance: 0.02
@@ -11020,7 +11139,7 @@ MonoBehaviour:
   pressSound: {fileID: 0}
   releaseSound: {fileID: 0}
   invalidSound: {fileID: 0}
-  normalColor: {r: 0.227451, g: 0.38431376, b: 0.6313726, a: 1}
+  normalColor: {r: 0.30588236, g: 0.43137258, b: 0.65882355, a: 1}
   pressedColor: {r: 0, g: 1, b: 0, a: 1}
   disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   hapticIntensity: 0.5
@@ -11028,7 +11147,7 @@ MonoBehaviour:
   showProgressIndicator: 1
   progressIndicatorPrefab: {fileID: 0}
   progressIndicatorParent: {fileID: 0}
-  puzzleController: {fileID: 0}
+  puzzleController: {fileID: 96348838}
   buttonIndex: 2
   onButtonPressed:
     m_PersistentCalls:
@@ -14097,13 +14216,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PaperButton
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 365257721316361150, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2083253854}
+      addedObject: {fileID: 2083253862}
+    - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2083253861}
   m_SourcePrefab: {fileID: 100100000, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
 --- !u!4 &1761315391 stripped
 Transform:
@@ -14931,10 +15054,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1972671152}
+      addedObject: {fileID: 1972671158}
     - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1972671158}
+      addedObject: {fileID: 1972671159}
   m_SourcePrefab: {fileID: 100100000, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
 --- !u!4 &1929610258 stripped
 Transform:
@@ -15784,42 +15907,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
   m_PrefabInstance: {fileID: 1929610257}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1972671152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972671145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaea78acdebb74547920239e7b94f82d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pressDistance: 0.02
-  returnSpeed: 5
-  pressSound: {fileID: 0}
-  releaseSound: {fileID: 0}
-  invalidSound: {fileID: 0}
-  normalColor: {r: 0.227451, g: 0.38431376, b: 0.6313726, a: 1}
-  pressedColor: {r: 0, g: 1, b: 0, a: 1}
-  disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  hapticIntensity: 0.5
-  hapticDuration: 0.1
-  showProgressIndicator: 1
-  progressIndicatorPrefab: {fileID: 0}
-  progressIndicatorParent: {fileID: 0}
-  puzzleController: {fileID: 0}
-  buttonIndex: 0
-  onButtonPressed:
-    m_PersistentCalls:
-      m_Calls: []
-  onValidPress:
-    m_PersistentCalls:
-      m_Calls: []
-  onInvalidPress:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1972671158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15892,6 +15979,42 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+--- !u!114 &1972671159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972671145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a25b4b34c202d740bdaed6e6b0847be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressDistance: 0.02
+  returnSpeed: 5
+  pressSound: {fileID: 0}
+  releaseSound: {fileID: 0}
+  invalidSound: {fileID: 0}
+  normalColor: {r: 0.227451, g: 0.38823533, b: 0.6392157, a: 1}
+  pressedColor: {r: 0, g: 1, b: 0, a: 1}
+  disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
+  showProgressIndicator: 1
+  progressIndicatorPrefab: {fileID: 0}
+  progressIndicatorParent: {fileID: 0}
+  puzzleController: {fileID: 96348838}
+  buttonIndex: 0
+  onButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  onValidPress:
+    m_PersistentCalls:
+      m_Calls: []
+  onInvalidPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &2003738335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7935918134294315223, guid: 63ae4671f42d07c4d9e3d8b3faef5b42, type: 3}
@@ -16742,7 +16865,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
   m_PrefabInstance: {fileID: 1761315390}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2083253854
+--- !u!114 &2083253861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16751,7 +16874,79 @@ MonoBehaviour:
   m_GameObject: {fileID: 2083253847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaea78acdebb74547920239e7b94f82d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+--- !u!114 &2083253862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083253847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a25b4b34c202d740bdaed6e6b0847be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pressDistance: 0.02
@@ -16759,7 +16954,7 @@ MonoBehaviour:
   pressSound: {fileID: 0}
   releaseSound: {fileID: 0}
   invalidSound: {fileID: 0}
-  normalColor: {r: 0.227451, g: 0.38431376, b: 0.6313726, a: 1}
+  normalColor: {r: 0.454902, g: 0.5372549, b: 0.70980394, a: 1}
   pressedColor: {r: 0, g: 1, b: 0, a: 1}
   disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   hapticIntensity: 0.5
@@ -16767,7 +16962,7 @@ MonoBehaviour:
   showProgressIndicator: 1
   progressIndicatorPrefab: {fileID: 0}
   progressIndicatorParent: {fileID: 0}
-  puzzleController: {fileID: 0}
+  puzzleController: {fileID: 96348838}
   buttonIndex: 1
   onButtonPressed:
     m_PersistentCalls:
@@ -16916,20 +17111,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuillButton
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 365257721316361150, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2103991327}
+      addedObject: {fileID: 2103991335}
+    - targetCorrespondingSourceObject: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2103991334}
   m_SourcePrefab: {fileID: 100100000, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
 --- !u!4 &2103991320 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4803614339566677342, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
   m_PrefabInstance: {fileID: 2103991319}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2103991327
+--- !u!114 &2103991334
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16938,7 +17137,79 @@ MonoBehaviour:
   m_GameObject: {fileID: 61163587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaea78acdebb74547920239e7b94f82d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+--- !u!114 &2103991335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61163587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a25b4b34c202d740bdaed6e6b0847be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pressDistance: 0.02
@@ -16946,7 +17217,7 @@ MonoBehaviour:
   pressSound: {fileID: 0}
   releaseSound: {fileID: 0}
   invalidSound: {fileID: 0}
-  normalColor: {r: 0.227451, g: 0.38431376, b: 0.6313726, a: 1}
+  normalColor: {r: 0.38823533, g: 0.48627454, b: 0.68235296, a: 1}
   pressedColor: {r: 0, g: 1, b: 0, a: 1}
   disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   hapticIntensity: 0.5
@@ -16954,7 +17225,7 @@ MonoBehaviour:
   showProgressIndicator: 1
   progressIndicatorPrefab: {fileID: 0}
   progressIndicatorParent: {fileID: 0}
-  puzzleController: {fileID: 0}
+  puzzleController: {fileID: 96348838}
   buttonIndex: 3
   onButtonPressed:
     m_PersistentCalls:
@@ -18235,4 +18506,3 @@ SceneRoots:
   - {fileID: 165620032}
   - {fileID: 1968456322}
   - {fileID: 1505764104}
-  - {fileID: 96348837}

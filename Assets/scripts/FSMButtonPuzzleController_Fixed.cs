@@ -84,25 +84,31 @@ public class FSMButtonPuzzleController_Fixed : MonoBehaviour
     }
     
     private void InitializeButtons()
+{
+    for (int i = 0; i < buttons.Length; i++)
     {
-        for (int i = 0; i < buttons.Length; i++)
+        ButtonConfig config = buttons[i];
+        
+        if (config.buttonInteractable != null)
         {
-            ButtonConfig config = buttons[i];
+            int capturedIndex = i;
             
-            if (config.buttonInteractable != null)
-            {
-                buttonIndexMap[config.buttonInteractable] = buttonIndex;
-                
-                config.buttonInteractable.selectEntered.AddListener((args) => HandleButtonActivated(buttonIndex));
-            }
-            else
-            {
-                Debug.LogError($"Button {i} has no interactable assigned!");
-            }
+            buttonIndexMap[config.buttonInteractable] = capturedIndex;
             
-            config.currentPresses = 0;
+            config.buttonInteractable.selectEntered.AddListener(
+                new UnityEngine.Events.UnityAction<SelectEnterEventArgs>(
+                    (args) => { HandleButtonActivated(capturedIndex); }
+                )
+            );
         }
+        else
+        {
+            Debug.LogError($"Button {i} has no interactable assigned!");
+        }
+        
+        config.currentPresses = 0;
     }
+}
 
     private void HandleButtonActivated(int buttonIndex)
     {
