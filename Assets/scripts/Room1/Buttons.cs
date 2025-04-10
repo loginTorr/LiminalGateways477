@@ -5,7 +5,6 @@ using UnityEngine;
 public class Buttons : MonoBehaviour {
     public NumberPuzzle Puzzle;
     public int Number;
-    public NumPuzzleState PuzzleState;
 
     void Start() {
     }
